@@ -3,39 +3,110 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leo 的个人网站</title>
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; line-height: 1.6; }
-    header { padding: 28px 18px; border-bottom: 1px solid #eee; }
-    main { max-width: 900px; margin: 0 auto; padding: 18px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    .card { border: 1px solid #eee; border-radius: 12px; padding: 14px; margin: 12px 0; }
-    .muted { color: #666; }
-  </style>
+  <meta name="description" content="南京大学软件学院本科二年级学生个人网站框架" />
+  <title>首页 | 个人网站框架</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
-<body>
-  <header>
-    <h1>Leo 的个人网站</h1>
-    <p class="muted">这里放简介：你是谁 / 你做什么 / 你的方向。</p>
-    <nav>
-      <a href="./">首页</a>
-      <a href="./about.html">关于</a>
-      <a href="./projects.html">项目</a>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">跳转到主要内容</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <strong class="brand-title">[待补充-姓名] 的个人网站</strong>
+        <span class="brand-subtitle">Nanjing University, School of Software</span>
+      </a>
+      <p class="identity-line">南京大学软件学院本科二年级学生 · [待补充-一句话定位]</p>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" type="button">菜单</button>
+    </div>
+    <nav class="site-nav" id="primary-nav" aria-label="主导航">
+      <div class="container">
+        <ul>
+          <li><a href="./index.html" data-page="home" aria-current="page">首页</a></li>
+          <li><a href="./about.html" data-page="about">关于</a></li>
+          <li><a href="./projects.html" data-page="projects">项目</a></li>
+          <li><a href="./resume.html" data-page="resume">简历</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>欢迎！</h2>
-      <p>这是雏形站点。接下来你可以加文章、项目列表、简历等。</p>
-    </div>
+  <main id="main-content" class="main-content">
+    <div class="container">
+      <section class="hero">
+        <article class="panel reveal">
+          <p class="eyebrow">Personal Website V1</p>
+          <h1>[待补充-首页主标题]</h1>
+          <p class="placeholder">[待补充-主页简介，建议 1-2 句]</p>
+          <div class="hero-meta">
+            <span class="meta-chip">身份：南京大学软件学院本科二年级</span>
+            <span class="meta-chip">方向：[待补充-技术方向]</span>
+            <span class="meta-chip">目标：[待补充-阶段目标]</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="./projects.html">查看项目框架</a>
+            <a class="btn btn-secondary" href="./resume.html">查看简历框架</a>
+          </div>
+        </article>
 
-    <div class="card">
-      <h2>近期更新</h2>
-      <ul>
-        <li>（示例）2026-03-04：搭建了 GitHub Pages</li>
-      </ul>
+        <aside class="panel reveal" aria-label="快速信息">
+          <h2 class="section-title">快速信息</h2>
+          <p class="placeholder">[待补充-头像占位说明]</p>
+          <p class="placeholder">[待补充-当前关注问题]</p>
+          <p class="placeholder">[待补充-正在学习的内容]</p>
+          <div class="pill-row">
+            <span class="pill">[待补充-关键词 1]</span>
+            <span class="pill">[待补充-关键词 2]</span>
+            <span class="pill">[待补充-关键词 3]</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid-12" aria-label="方向概览">
+        <article class="card span-4 reveal">
+          <h2 class="section-title">方向一</h2>
+          <p class="placeholder">[待补充-方向一说明]</p>
+        </article>
+        <article class="card span-4 reveal">
+          <h2 class="section-title">方向二</h2>
+          <p class="placeholder">[待补充-方向二说明]</p>
+        </article>
+        <article class="card span-4 reveal">
+          <h2 class="section-title">方向三</h2>
+          <p class="placeholder">[待补充-方向三说明]</p>
+        </article>
+      </section>
+
+      <section class="card reveal mt-3" aria-label="最近动态">
+        <h2 class="section-title">最近动态</h2>
+        <ul class="timeline">
+          <li>
+            <strong>[待补充-日期 1]</strong>
+            <p class="placeholder">[待补充-动态内容 1]</p>
+          </li>
+          <li>
+            <strong>[待补充-日期 2]</strong>
+            <p class="placeholder">[待补充-动态内容 2]</p>
+          </li>
+          <li>
+            <strong>[待补充-日期 3]</strong>
+            <p class="placeholder">[待补充-动态内容 3]</p>
+          </li>
+        </ul>
+      </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 [待补充-姓名] · [待补充-版权说明]</small>
+      <div class="footer-links" aria-label="联系链接">
+        <a href="#">邮箱：[待补充-邮箱]</a>
+        <a href="#">GitHub：[待补充-GitHub]</a>
+        <a href="#">社交：[待补充-链接]</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

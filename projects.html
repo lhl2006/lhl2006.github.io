@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="项目页面框架" />
+  <title>项目 | 个人网站框架</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main-content">跳转到主要内容</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <strong class="brand-title">[待补充-姓名] 的个人网站</strong>
+        <span class="brand-subtitle">Nanjing University, School of Software</span>
+      </a>
+      <p class="identity-line">南京大学软件学院本科二年级学生 · [待补充-一句话定位]</p>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" type="button">菜单</button>
+    </div>
+    <nav class="site-nav" id="primary-nav" aria-label="主导航">
+      <div class="container">
+        <ul>
+          <li><a href="./index.html" data-page="home">首页</a></li>
+          <li><a href="./about.html" data-page="about">关于</a></li>
+          <li><a href="./projects.html" data-page="projects" aria-current="page">项目</a></li>
+          <li><a href="./resume.html" data-page="resume">简历</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="main-content">
+    <div class="container">
+      <section class="panel reveal">
+        <p class="eyebrow">Projects</p>
+        <h1>[待补充-项目页标题]</h1>
+        <p class="placeholder">[待补充-项目总览说明]</p>
+      </section>
+
+      <section class="card reveal mt-3" aria-label="项目筛选">
+        <h2 class="section-title">筛选标签（占位）</h2>
+        <div class="filter-bar" role="toolbar" aria-label="项目筛选按钮">
+          <button class="filter-btn is-active" type="button">全部</button>
+          <button class="filter-btn" type="button">课程项目</button>
+          <button class="filter-btn" type="button">个人实验</button>
+          <button class="filter-btn" type="button">开源协作</button>
+        </div>
+        <p class="muted">当前仅做前端交互占位，不连接真实数据筛选逻辑。</p>
+      </section>
+
+      <section class="grid-12 mt-3" aria-label="项目列表模板">
+        <article class="card span-6 reveal">
+          <h2 class="section-title">[待补充-项目标题 A]</h2>
+          <p class="placeholder">[待补充-项目简介 A]</p>
+          <div class="pill-row">
+            <span class="pill">[待补充-技术栈 A1]</span>
+            <span class="pill">[待补充-技术栈 A2]</span>
+            <span class="pill">[待补充-技术栈 A3]</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-secondary" href="#">[待补充-仓库链接]</a>
+            <a class="btn btn-secondary" href="#">[待补充-演示链接]</a>
+          </div>
+        </article>
+
+        <article class="card span-6 reveal">
+          <h2 class="section-title">[待补充-项目标题 B]</h2>
+          <p class="placeholder">[待补充-项目简介 B]</p>
+          <div class="pill-row">
+            <span class="pill">[待补充-技术栈 B1]</span>
+            <span class="pill">[待补充-技术栈 B2]</span>
+            <span class="pill">[待补充-技术栈 B3]</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-secondary" href="#">[待补充-仓库链接]</a>
+            <a class="btn btn-secondary" href="#">[待补充-演示链接]</a>
+          </div>
+        </article>
+
+        <article class="card span-6 reveal">
+          <h2 class="section-title">[待补充-项目标题 C]</h2>
+          <p class="placeholder">[待补充-项目简介 C]</p>
+          <div class="pill-row">
+            <span class="pill">[待补充-技术栈 C1]</span>
+            <span class="pill">[待补充-技术栈 C2]</span>
+            <span class="pill">[待补充-技术栈 C3]</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-secondary" href="#">[待补充-仓库链接]</a>
+            <a class="btn btn-secondary" href="#">[待补充-演示链接]</a>
+          </div>
+        </article>
+
+        <article class="card span-6 reveal">
+          <h2 class="section-title">[待补充-项目标题 D]</h2>
+          <p class="placeholder">[待补充-项目简介 D]</p>
+          <div class="pill-row">
+            <span class="pill">[待补充-技术栈 D1]</span>
+            <span class="pill">[待补充-技术栈 D2]</span>
+            <span class="pill">[待补充-技术栈 D3]</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-secondary" href="#">[待补充-仓库链接]</a>
+            <a class="btn btn-secondary" href="#">[待补充-演示链接]</a>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 [待补充-姓名] · [待补充-版权说明]</small>
+      <div class="footer-links" aria-label="联系链接">
+        <a href="#">邮箱：[待补充-邮箱]</a>
+        <a href="#">GitHub：[待补充-GitHub]</a>
+        <a href="#">社交：[待补充-链接]</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
